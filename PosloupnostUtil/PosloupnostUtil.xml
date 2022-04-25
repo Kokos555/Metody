@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PosloupnostUtil</name>
+    </assembly>
+    <members>
+        <member name="M:PosloupnostUtil.Posloupnost.SoucetArPosl(System.Int32@,System.Int32,System.Int32,System.Int32@)">
+            <summary>
+            Součet aritmetické posloupnosti
+            </summary>
+            <param name="a1">První člen</param>
+            <param name="a2">Druhý člen</param>
+            <param name="n">Počet členů</param>
+            <param name="diference">Rozdíl a2 - a1</param>
+            <returns>Součet n členů arimetické posloupnosti</returns>
+        </member>
+    </members>
+</doc>

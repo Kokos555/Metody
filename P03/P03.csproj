@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A76FDB47-6CE0-44FC-9BEA-1D2F52797015}</ProjectGuid>
+    <ProjectGuid>{B64BEA06-1DE8-4BDA-9572-D873888BF571}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>P01</RootNamespace>
-    <AssemblyName>P01</AssemblyName>
+    <RootNamespace>P03</RootNamespace>
+    <AssemblyName>P03</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -75,12 +75,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\PosloupnostUtil\PosloupnostUtil.csproj">
-      <Project>{FEB6B13A-9BD9-403F-A44C-5AAD355403EC}</Project>
-      <Name>PosloupnostUtil</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
