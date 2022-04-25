@@ -76,5 +76,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PoleUtil\PoleUtil.csproj">
+      <Project>{8EE651B0-C568-45BE-81DB-FB3BD2607D6E}</Project>
+      <Name>PoleUtil</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

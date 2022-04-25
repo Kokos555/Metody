@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PoleUtil</name>
+    </assembly>
+    <members>
+        <member name="M:PoleUtil.Pole.Generovani(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Generovaní čísel do pole.
+            </summary>
+            <param name="pocet">Počet prvků </param>
+            <param name="dolni_mez">Dolní interval</param>
+            <param name="horni_mez">Horní internval</param>
+            <returns>Vygenerované pole prvnků</returns>
+        </member>
+        <member name="M:PoleUtil.Pole.Zobrazit(System.Windows.Forms.ListBox,System.Int32[])">
+            <summary>
+            Zobrazení do listboxu.
+            </summary>
+            <param name="cisla">Jméno listboxu</param>
+            <param name="pole">Pole vygenerovaných čísel</param>
+        </member>
+        <member name="M:PoleUtil.Pole.SoucetAPocet(System.Int32@,System.Int32[])">
+            <summary>
+            Součet sudých čísel a počet lichých čísel
+            </summary>
+            <param name="pocet">Počet pro lichá čísla</param>
+            <param name="pole">Pole vygenerovaných čísel</param>
+            <returns>Součet sudých čísel a počet lichých</returns>
+        </member>
+        <member name="M:PoleUtil.Pole.Roustouci(System.Int32[])">
+            <summary>
+            Zjištění jestli je posloupnost rostoucí.
+            </summary>
+            <param name="pole">Pole vygenerovaných čísel</param>
+            <returns>Rostoucí posloupnost</returns>
+        </member>
+        <member name="M:PoleUtil.Pole.Vymena(System.Int32[])">
+            <summary>
+            Výměna maxima s posledním prvkem pole.
+            </summary>
+            <param name="pole">Pole vygenerovaných čísel</param>
+        </member>
+    </members>
+</doc>
