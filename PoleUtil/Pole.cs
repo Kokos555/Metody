@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MatematikaUtil;
+using System;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -88,6 +89,28 @@ namespace PoleUtil
             int posledni_radek_pole = pole.Length - 1;
             pole[poradi] = pole[posledni_radek_pole];
             pole[posledni_radek_pole] = max;
+        }
+        /// <summary>
+        /// Vynulovaní prkvů a mocnina prvků v poli
+        /// </summary>
+        /// <param name="pole">Pole vygenerovaných prvků</param>
+        /// <param name="mocnina">Mocni na kterou se budou umocňovat prvky</param>
+        /// <returns>Záporné prvky v poli dá na hodnotu 0 a kladné prvky v poli to umocní na zvolené číslo</returns>
+        static public int[] VynulovaniAMocnina(int[] pole, int mocnina)
+        {
+            for (int i = 0; i < pole.Length; i++)
+            {
+                int cislo = pole[i];
+                if (pole[i] < 0)
+                {
+                    pole[i] = 0;
+                }
+                else
+                {
+                    pole[i] = Matika.Mocnina(pole[i], cislo, mocnina);
+                }
+            }
+            return pole;
         }
     }
 }

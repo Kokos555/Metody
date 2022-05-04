@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MatematikaUtil</name>
+    </assembly>
+    <members>
+        <member name="M:MatematikaUtil.Matika.Mocnina(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="prvek"></param>
+            <param name="cislo"></param>
+            <param name="mocnina"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

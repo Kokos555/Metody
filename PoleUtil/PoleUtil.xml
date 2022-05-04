@@ -41,5 +41,13 @@
             </summary>
             <param name="pole">Pole vygenerovaných čísel</param>
         </member>
+        <member name="M:PoleUtil.Pole.VynulovaniAMocnina(System.Int32[],System.Int32)">
+            <summary>
+            Vynulovaní prkvů a mocnina prvků v poli
+            </summary>
+            <param name="pole">Pole vygenerovaných prvků</param>
+            <param name="mocnina">Mocni na kterou se budou umocňovat prvky</param>
+            <returns>Záporné prvky v poli dá na hodnotu 0 a kladné prvky v poli to umocní na zvolené číslo</returns>
+        </member>
     </members>
 </doc>
