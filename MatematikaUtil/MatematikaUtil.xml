@@ -6,12 +6,12 @@
     <members>
         <member name="M:MatematikaUtil.Matika.Mocnina(System.Int32,System.Int32,System.Int32)">
             <summary>
-            
+            Mocnina čísla
             </summary>
-            <param name="prvek"></param>
-            <param name="cislo"></param>
-            <param name="mocnina"></param>
-            <returns></returns>
+            <param name="prvek">Číslo které chceme umocnit</param>
+            <param name="cislo">Číslo čísla které umocňujeme</param>
+            <param name="mocnina">Na jakou mocninu</param>
+            <returns>Mocnina čísla na x-tou</returns>
         </member>
     </members>
 </doc>

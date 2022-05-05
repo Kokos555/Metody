@@ -5,15 +5,15 @@ namespace MatematikaUtil
     public class Matika
     {
         /// <summary>
-        /// 
+        /// Mocnina čísla
         /// </summary>
-        /// <param name="prvek"></param>
-        /// <param name="cislo"></param>
-        /// <param name="mocnina"></param>
-        /// <returns></returns>
-        static public int Mocnina(int prvek,int cislo,int mocnina)
+        /// <param name="cislo">Čislo které bude násobit mocněné číslo</param>
+        /// <param name="mocnina">´Mocnina čísla</param>
+        /// <returns>Vrátí mocninu čísla</returns>
+        static public int Mocnina(int cislo,int mocnina)
         {
-            for (int p = 1; p < mocnina; p++)
+            int prvek = 1;
+            for (int p = 0; p < mocnina; p++)
             {
                 prvek *= cislo;
             }
