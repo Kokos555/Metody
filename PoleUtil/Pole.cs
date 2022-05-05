@@ -107,7 +107,7 @@ namespace PoleUtil
                 }
                 else
                 {
-                    pole[i] = Matika.Mocnina(pole[i], cislo, mocnina);
+                    pole[i] = Matika.Mocnina(cislo, mocnina);
                 }
             }
             return pole;

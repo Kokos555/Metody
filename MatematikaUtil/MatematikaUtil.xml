@@ -4,14 +4,13 @@
         <name>MatematikaUtil</name>
     </assembly>
     <members>
-        <member name="M:MatematikaUtil.Matika.Mocnina(System.Int32,System.Int32,System.Int32)">
+        <member name="M:MatematikaUtil.Matika.Mocnina(System.Int32,System.Int32)">
             <summary>
             Mocnina čísla
             </summary>
-            <param name="prvek">Číslo které chceme umocnit</param>
-            <param name="cislo">Číslo čísla které umocňujeme</param>
-            <param name="mocnina">Na jakou mocninu</param>
-            <returns>Mocnina čísla na x-tou</returns>
+            <param name="cislo">Čislo které bude násobit mocněné číslo</param>
+            <param name="mocnina">´Mocnina čísla</param>
+            <returns>Vrátí mocninu čísla</returns>
         </member>
     </members>
 </doc>

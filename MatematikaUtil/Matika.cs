@@ -19,5 +19,34 @@ namespace MatematikaUtil
             }
             return prvek;
         }
+
+        /// <summary>
+        /// Zjištění prvočísla
+        /// </summary>
+        /// <param name="cislo">Číslo ze kterého chceme zjistit prvočislo</param>
+        /// <returns>Vrátí bool, jestli číslo je/není prvočíslo</returns>
+        static public bool Prvocislo(int cislo)
+        {
+            if (cislo == 1)
+            {
+                return false;
+            }
+            if (cislo == 2)
+            {
+                return true;
+            }
+            if (cislo % 2 == 0)
+            {
+                return false;
+            }
+            for (int i = 3; i <= Math.Sqrt(cislo); i += 2)
+            {
+                if (cislo % i == 0)
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
     }
 }
