@@ -19,7 +19,8 @@ namespace P08
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string slovo = textBox1.Text;
+            
+
 
         }
     }

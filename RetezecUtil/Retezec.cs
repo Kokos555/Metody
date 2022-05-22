@@ -64,7 +64,7 @@ namespace RetezecUtil
             }
         }
         /// <summary>
-        /// Zobrazení slov v listboxu
+        /// Zobrazení slov do listboxu
         /// </summary>
         /// <param name="cisla">Název Listboxu</param>
         /// <param name="slova">Celé slova</param>
@@ -113,6 +113,24 @@ namespace RetezecUtil
             {
                 return false;
             }
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="chain">Slova</param>
+        /// <returns></returns>
+        static public string Smaz(string chain)
+        {
+            int i = 0;
+            while (i < chain.Length)
+            {
+                if (char.IsDigit(chain[i]))
+                {
+                    chain = chain.Remove(i, 1);
+                }
+                else i++;
+            }
+            return chain;
         }
     }
 }
