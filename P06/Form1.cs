@@ -26,11 +26,10 @@ namespace P06
             {
                 slovo = slovo.Replace("  ", " ");
             }
-            string[] slova = slovo.Split(' ');
-            if (Retezec.ObsahujeSlovo(slova,out string nejdelsi_slovo, out string nejkratsi_slovo))
+            if (Retezec.ObsahujeSlovo(slovo,out string nejdelsi_slovo, out string nejkratsi_slovo))
             {
                 MessageBox.Show(String.Format("Věta ({0}) obsahuje slova, nejdelsi slovo je ({1}), nejkratsi slovo je ({2})", slovo, nejdelsi_slovo, nejkratsi_slovo));
-                Retezec.Zobraz(listBox1, slova);
+                Retezec.Zobraz(listBox1, slovo);
             }
         }
     }

@@ -37,8 +37,9 @@ namespace RetezecUtil
         /// <param name="nejdelsi_slovo">Nějakou proměnou jako u Max</param>
         /// <param name="nejkratsi_slovo">Nějakou proměnou jako u Min</param>
         /// <returns>Vrací jestli daný text, obsahuje slovo, potom vrací nejdelší a nejkratší slovo</returns>
-        static public bool ObsahujeSlovo(string[] slova, out string nejdelsi_slovo, out string nejkratsi_slovo)
+        static public bool ObsahujeSlovo(string slovo, out string nejdelsi_slovo, out string nejkratsi_slovo)
         {
+            string[] slova = slovo.Split(' '); 
             nejkratsi_slovo = slova[0];
             nejdelsi_slovo = "";
             bool projelo = false;
@@ -61,11 +62,12 @@ namespace RetezecUtil
         /// </summary>
         /// <param name="cisla">Název Listboxu</param>
         /// <param name="slova">Celé slova</param>
-        static public void Zobraz(ListBox cisla, string[] slova)
+        static public void Zobraz(ListBox cisla, string slova)
         {
-            for (int i = 0; i < slova.Length; i++)
+            string[] slovo = slova.Split(' ');
+            for (int i = 0; i < slovo.Length; i++)
             {
-                cisla.Items.Add(slova[i]);
+                cisla.Items.Add(slovo[i]);
             }
         }
         /// <summary>
@@ -107,20 +109,6 @@ namespace RetezecUtil
                 }
             }
             return alfanum;
-        }
-
-        /// <summary>
-        /// vypise string[] do textboxu
-        /// </summary>
-        /// <param name="chain">vstup</param>
-        /// <param name="ctrl">vystup</param>
-        static public void Zobraz(string[] chain, TextBox ctrl)
-        {
-            foreach (string value in chain)
-            {
-                ctrl.Text += value;
-                ctrl.Text += Environment.NewLine;
-            }
         }
         /// <summary>
         /// Mazaní číslic ve slově.

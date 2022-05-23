@@ -20,8 +20,9 @@ namespace P08
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string[] slova = Retezec.Smaz(textBox1.Text).Split(' ');
-            Retezec.Zobraz(slova, textBox2);
+            string slova = Retezec.Smaz(textBox1.Text);
+            Retezec.Zobraz(listBox1, slova);
+            
         }
     }
 }

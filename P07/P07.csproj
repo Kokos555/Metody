@@ -84,6 +84,10 @@
       <Project>{2108639E-DCE0-4378-B15E-B3E517089533}</Project>
       <Name>MatematikaUtil</Name>
     </ProjectReference>
+    <ProjectReference Include="..\RetezecUtil\RetezecUtil.csproj">
+      <Project>{AC6112CA-92EB-4B6F-B428-96DBC976A842}</Project>
+      <Name>RetezecUtil</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

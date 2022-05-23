@@ -79,5 +79,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RetezecUtil\RetezecUtil.csproj">
+      <Project>{AC6112CA-92EB-4B6F-B428-96DBC976A842}</Project>
+      <Name>RetezecUtil</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
