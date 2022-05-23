@@ -12,5 +12,12 @@
             <param name="mocnina">´Mocnina čísla</param>
             <returns>Vrátí mocninu čísla</returns>
         </member>
+        <member name="M:MatematikaUtil.Matika.Prvocislo(System.Int32)">
+            <summary>
+            Zjištění prvočísla
+            </summary>
+            <param name="cislo">Číslo ze kterého chceme zjistit prvočislo</param>
+            <returns>Vrátí bool, jestli číslo je/není prvočíslo</returns>
+        </member>
     </members>
 </doc>

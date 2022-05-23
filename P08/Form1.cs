@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RetezecUtil;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,9 +20,8 @@ namespace P08
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
-
-
+            string[] slova = Retezec.Smaz(textBox1.Text).Split(' ');
+            Retezec.Zobraz(slova, textBox2);
         }
     }
 }

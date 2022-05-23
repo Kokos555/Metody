@@ -41,7 +41,7 @@ namespace RetezecUtil
         {
             nejkratsi_slovo = slova[0];
             nejdelsi_slovo = "";
-            int projelo = 0;
+            bool projelo = false;
             for (int i = 0; i < slova.Length - 1; i++)
             {
                 if (slova[i].Length > nejdelsi_slovo.Length)
@@ -52,16 +52,9 @@ namespace RetezecUtil
                 {
                     nejkratsi_slovo = slova[i];
                 }
-                projelo = 1;
+                projelo = true;
             }
-            if (projelo == 0)
-            {
-                return false;
-            }
-            else
-            {
-                return true;
-            }
+            return projelo;
         }
         /// <summary>
         /// Zobrazení slov do listboxu
@@ -85,52 +78,67 @@ namespace RetezecUtil
         /// <returns>Vrací bool, jestli je slovo Alfanum, což znamená že slovo/věta je složena jenom z čísel a písmen</returns>
         static public bool JeAlfanum(string slovo, out int male_pismena, out int cifry, out int jine_znaky)
         {
+            int velke_pismena = 0;
             male_pismena = 0;
             cifry = 0;
             jine_znaky = 0;
-            int projelo = 0;
+            bool alfanum = true;
             for (int i = 0; i < slovo.Length; i++)
             {
                 if (slovo[i] >= 'a' && slovo[i] <= 'z')
                 {
                     male_pismena++;
+                    alfanum = true;
+                }
+                else if (slovo[i] >= 'A' && slovo[i] <= 'Z')
+                {
+                    velke_pismena++;
+                    alfanum = true;
                 }
                 else if (slovo[i] >= '0' && slovo[i] <= '9')
                 {
                     cifry++;
+                    alfanum = true;
                 }
                 else if (slovo[i] != ' ')
                 {
+                    alfanum = false;
                     jine_znaky++;
                 }
-                projelo = 1;
             }
-            if (projelo != 0 && jine_znaky == 0)
+            return alfanum;
+        }
+
+        /// <summary>
+        /// vypise string[] do textboxu
+        /// </summary>
+        /// <param name="chain">vstup</param>
+        /// <param name="ctrl">vystup</param>
+        static public void Zobraz(string[] chain, TextBox ctrl)
+        {
+            foreach (string value in chain)
             {
-                return true;
-            }
-            else
-            {
-                return false;
+                ctrl.Text += value;
+                ctrl.Text += Environment.NewLine;
             }
         }
         /// <summary>
-        /// 
+        /// Mazaní číslic ve slově.
         /// </summary>
-        /// <param name="chain">Slova</param>
+        /// <param name="slovo">Slova</param>
         /// <returns></returns>
-        static public string Smaz(string chain)
+        static public string Smaz(string slovo)
         {
             int i = 0;
-            while (i < chain.Length)
+            while (i < slovo.Length)
             {
-                if (char.IsDigit(chain[i]))
+                if (char.IsDigit(slovo[i]))
                 {
-                    chain = chain.Remove(i, 1);
+                    slovo = slovo.Remove(i, 1);
                 }
                 else i++;
             }
-            return chain;
+            return slovo;
         }
     }
 }

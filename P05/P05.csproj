@@ -85,7 +85,7 @@
       <Name>MatematikaUtil</Name>
     </ProjectReference>
     <ProjectReference Include="..\RetezecUtil\RetezecUtil.csproj">
-      <Project>{8E74EA13-B1F7-440E-ABC9-482B8EC4F00B}</Project>
+      <Project>{AC6112CA-92EB-4B6F-B428-96DBC976A842}</Project>
       <Name>RetezecUtil</Name>
     </ProjectReference>
   </ItemGroup>
