@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RetezecUtil</name>
+    </assembly>
+    <members>
+        <member name="M:RetezecUtil.Retezec.Obsahuje(System.String,System.Int32@,System.Int32@)">
+            <summary>
+            Zjistí jestli v text obsahuje cislo.
+            </summary>
+            <param name="text">Celý text</param>
+            <param name="pocet">Pocet na ukládaní číslic které jsou v textu</param>
+            <param name="soucet">Soucet čísel, která jsou lichá</param>
+            <returns>Celkový počet čísel, a soucet lichcých čísel</returns>
+        </member>
+        <member name="M:RetezecUtil.Retezec.ObsahujeSlovo(System.String,System.String@,System.String@)">
+            <summary>
+            Jestli textbox obsahuje slovo
+            </summary>
+            <param name="slova">Slova, nebo věty</param>
+            <param name="nejdelsi_slovo">Nějakou proměnou jako u Max</param>
+            <param name="nejkratsi_slovo">Nějakou proměnou jako u Min</param>
+            <returns>Vrací jestli daný text, obsahuje slovo, potom vrací nejdelší a nejkratší slovo</returns>
+        </member>
+        <member name="M:RetezecUtil.Retezec.Zobraz(System.Windows.Forms.ListBox,System.String)">
+            <summary>
+            Zobrazení slov do listboxu
+            </summary>
+            <param name="cisla">Název Listboxu</param>
+            <param name="slova">Celé slova</param>
+        </member>
+        <member name="M:RetezecUtil.Retezec.JeAlfanum(System.String,System.Int32@,System.Int32@,System.Int32@)">
+            <summary>
+            Zjištění jestli je slovo/věta alfanum.
+            </summary>
+            <param name="slovo">Proměná string, kde je zapsáno cokoli v listboxu</param>
+            <param name="male_pismena">Proměná int na počet malých písmen</param>
+            <param name="cifry">Proměná cifra na počet cifer</param>
+            <param name="jine_znaky">Proměná jiné znaky na počet jiných znaků, než malých písmen a cifer</param>
+            <returns>Vrací bool, jestli je slovo Alfanum, což znamená že slovo/věta je složena jenom z čísel a písmen</returns>
+        </member>
+        <member name="M:RetezecUtil.Retezec.Smaz(System.String)">
+            <summary>
+            Mazaní číslic ve slově.
+            </summary>
+            <param name="slovo">Slova</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

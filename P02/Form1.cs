@@ -32,8 +32,7 @@ namespace P02
                 pole = Pole.Generovani(pocet);
             }
             Pole.Zobrazit(listBox1, pole);
-            int pocet2;
-            int soucet_sudych = Pole.SoucetAPocet(out pocet2, pole);
+            int soucet_sudych = Pole.SoucetAPocet(out int pocet2, pole);
             MessageBox.Show(string.Format("Součet sudých čísel je {0} a počet lichých čísel je {1}", soucet_sudych, pocet2));
             MessageBox.Show(string.Format("Toto generovani cisel {0} roustoucí.", Pole.Roustouci(pole) ? "je" : "není"));
             Pole.Vymena(pole);

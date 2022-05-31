@@ -79,5 +79,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PosloupnostUtil\PosloupnostUtil.csproj">
+      <Project>{FEB6B13A-9BD9-403F-A44C-5AAD355403EC}</Project>
+      <Name>PosloupnostUtil</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
